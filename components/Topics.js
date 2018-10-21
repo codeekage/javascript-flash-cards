@@ -2,36 +2,155 @@ let Introduction = [
     {
         topic : 'Introduction',
         route : 'Intro'
-    }
+    },
+    {
+        topic : 'About Javascipt',
+        route : 'Intro'
+    },
+    {
+        topic : 'JavaScript and Java',
+        route : 'Intro'
+    },
+    {
+        topic : 'ECMAScript',
+        route : 'Intro'
+    },
+    {
+        topic : 'Tools',
+        route : 'Intro'
+    },
+    {
+        topic : 'Hello World',
+        route : 'Intro'
+    },
+
 ];
 
 let Grammar = [
     {
-        topic : 'Introduction',
+        topic : 'Basic Syntax & comments',
         route : 'Intro'
-    }
-]
-
-let Loops = [
+    },
     {
-        topic : 'Introduction',
+        topic : 'Declarations',
         route : 'Intro'
-    }
-]
-
-let ExpressionOperators = [
+    },
     {
-        topic : 'Introduction',
+        topic : 'Variable Scope',
         route : 'Intro'
-    }
+    },
+    {
+        topic : 'Variable Hoisting',
+        route : 'Intro'
+    },
+    {
+        topic : 'Data structures and types',
+        route : 'Intro'
+    },
+    {
+        topic : 'Literals',
+        route : 'Intro'
+    },
 ]
 
 let ControlFlow = [
     {
-        topic : 'Introduction',
+        topic : 'if..else',
         route : 'Intro'
-    }
+    },
+    {
+        topic : 'switch',
+        route : 'Intro'
+    },
+    {
+        topic : 'try/catch/throw',
+        route : 'Intro'
+    },
+    {
+        topic : 'Error objects',
+        route : 'Intro'
+    },
+    {
+        topic : 'Promises',
+        route : 'Intro'
+    },
 ]
+
+let Loops = [
+    {
+        topic : 'for',
+        route : 'Intro'
+    },
+    {
+        topic : 'while',
+        route : 'Intro'
+    },
+    {
+        topic : 'do..while',
+        route : 'Intro'
+    },
+    {
+        topic : 'break/continue',
+        route : 'Intro'
+    },
+    {
+        topic : 'for..in',
+        route : 'Intro'
+    },
+    {
+        topic : 'for..of',
+        route : 'Intro'
+    },
+]
+
+let Functions = [
+    {
+        topic : 'Defining functions',
+        route : 'Intro'
+    },
+    {
+        topic : 'Calling functions',
+        route : 'Intro'
+    },
+    {
+        topic : 'Functions scope',
+        route : 'Intro'
+    },
+    {
+        topic : 'Closures',
+        route : 'Intro'
+    },
+    {
+        topic : 'Arguments & Parameters',
+        route : 'Intro'
+    },
+    {
+        topic : 'Arrow functions',
+        route : 'Intro'
+    },
+
+]
+
+let ExpressionOperators = [
+    {
+        topic : 'Assignment & Comparisons',
+        route : 'Intro'
+    },
+    {
+        topic : 'Arithmetic operators',
+        route : 'Intro'
+    },
+    {
+        topic : 'Bitwise & logical operators',
+        route : 'Intro'
+    },
+    {
+        topic : 'Conditional (ternary) operator',
+        route : 'Intro'
+    },
+]
+
+
 
 let Arrays = [
     {
@@ -40,12 +159,7 @@ let Arrays = [
     }
 ]
 
-let Functions = [
-    {
-        topic : 'Introduction',
-        route : 'Intro'
-    }
-]
+
 
 
 

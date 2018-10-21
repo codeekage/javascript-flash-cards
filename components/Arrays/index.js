@@ -11,8 +11,7 @@ class HomeScreen extends React.Component {
     static navigationOptions = ({navigation}) =>  {
         const params = navigation.state.params || {};
         return {
-            title: 'Home',
-            drawerLabel: 'Home',
+            title: 'Arrays',
             drawerIcon: ({ tintColor }) => (
                 <Icon active name='ios-home' style={{color : 'pink'}} />
             ),

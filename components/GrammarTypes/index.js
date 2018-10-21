@@ -11,9 +11,7 @@ class GrammarScreen extends React.Component {
     static navigationOptions = ({navigation}) =>  {
         const params = navigation.state.params || {};
         return {
-            drawerIcon: ({ tintColor }) => (
-                <Icon active name='ios-home' style={{color : 'pink'}} />
-            ),
+            title: 'Grammar and Types',
             headerLeft: (
               <Button transparent onPress={params.openDrawer}>
                   <Icon active name='menu' />
