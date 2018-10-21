@@ -1,7 +1,8 @@
+
 let Introduction = [
     {
         topic : 'Introduction',
-        route : 'Intro'
+        route : 'Guide'
     },
     {
         topic : 'About Javascipt',
@@ -9,7 +10,7 @@ let Introduction = [
     },
     {
         topic : 'JavaScript and Java',
-        route : 'Intro'
+        route : 'JavaJava'
     },
     {
         topic : 'ECMAScript',

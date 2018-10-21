@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { createStackNavigator } from 'react-navigation'
-import {Button, Icon, Image, Container} from 'native-base'
+import { Button, Container, Header, Content, List, ListItem,  Icon, Left, Right } from 'native-base';
 import NotificationScreen from './Notifications'
 import TopicList from '../Layout/Topics'
 import ApplicationFooter from '../Layout/Footer'
 import { Introduction } from '../Topics'
+import IntroductionGuide from './Introduction';
+import JavaScriptJava from './JavaScriptJava';
 
 class HomeScreen extends React.Component {
     static navigationOptions = ({navigation}) =>  {
@@ -45,15 +47,36 @@ class HomeScreen extends React.Component {
     openNotification = () => {
         this.props.navigation.navigate('Notifications')
     }
-  
+
+    findRoute = (route) => {
+        //await AsyncStorage.clear();
+        alert(route)
+        //this.props.navigation.navigate(route)
+      };
+
     render() {
       return (
         <Container>
-            <TopicList topics={Introduction}/>
+            <Content>
+            <List dataArray={Introduction} renderRow={(data)=>
+              <ListItem onPress={(e) => this.props.navigation.navigate(data.route) }>
+                <Left>
+                <Text>{data.topic}</Text>
+              </Left>
+              <Right>
+                <Icon name="ios-arrow-forward" />
+              </Right>
+              </ListItem>
+            }>
+          </List>
+            </Content>
+            <Text onPress={() => { this.props.navigation.navigate('Guide')}}>L</Text>
             <ApplicationFooter/>
         </Container>
       );
     }
+
+  
 }
 
 const styles = StyleSheet.create({
@@ -69,6 +92,9 @@ const styles = StyleSheet.create({
 
 export default createStackNavigator({
    Intro: HomeScreen,
-   Notifications : NotificationScreen 
-}
+   Guide : IntroductionGuide,
+   JavaJava : JavaScriptJava
+},{
+    initialRouteName : 'Intro'
+} 
 )
