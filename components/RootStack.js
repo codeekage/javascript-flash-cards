@@ -1,6 +1,6 @@
-import DrawerNavigator from './DrawerNavigation'
-import { createSwitchNavigator } from 'react-navigation'
 
+import { createSwitchNavigator } from 'react-navigation'
+import DrawerNavigator from './DrawerNavigator'
 
 export default RootStack = createSwitchNavigator(
     {
