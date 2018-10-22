@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { createStackNavigator } from 'react-navigation'
 import { Button, Container, Header, Content, List, ListItem,  Icon, Left, Right } from 'native-base';
-import NotificationScreen from './Notifications'
+import NotificationScreen from '../Layout/Notifications'
 import TopicList from '../Layout/Topics'
 import ApplicationFooter from '../Layout/Footer'
 import { Introduction } from '../Topics'
@@ -70,7 +70,6 @@ class HomeScreen extends React.Component {
             }>
           </List>
             </Content>
-            <Text onPress={() => { this.props.navigation.navigate('Guide')}}>L</Text>
             <ApplicationFooter/>
         </Container>
       );
@@ -92,6 +91,7 @@ const styles = StyleSheet.create({
 
 export default createStackNavigator({
    Intro: HomeScreen,
+   Notifications : NotificationScreen,
    Guide : IntroductionGuide,
    JavaJava : JavaScriptJava
 },{

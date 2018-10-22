@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { createStackNavigator } from 'react-navigation'
-import {Button, Icon, Image, Container} from 'native-base'
-import NotificationScreen from './Notifications'
+import { Button, Container, Header, Content, List, ListItem,  Icon, Left, Right } from 'native-base';
+import NotificationScreen from '../Layout/Notifications'
 import TopicList from '../Layout/Topics'
 import ApplicationFooter from '../Layout/Footer'
 import { Grammar } from '../Topics'
@@ -45,7 +45,19 @@ class GrammarScreen extends React.Component {
     render() {
       return (
         <Container>
-            <TopicList topics={Grammar}/>
+            <Content>
+            <List dataArray={Grammar} renderRow={(data)=>
+              <ListItem onPress={(e) => this.props.navigation.navigate(data.route) }>
+                <Left>
+                <Text>{data.topic}</Text>
+              </Left>
+              <Right>
+                <Icon name="ios-arrow-forward" />
+              </Right>
+              </ListItem>
+            }>
+          </List>
+            </Content>
             <ApplicationFooter/>
         </Container>
       );

@@ -74,7 +74,7 @@ const cards = [
         header : 'Cont..',
         note : 'Difference betweeen JavaScript and Java',
         body : (
-                    <Image source={require('../../assets/js-compare.png')} style={{ height: 300,  flex: 1 }} />
+                    <Image source={require('../../assets/js-compare.png')} style={{ height: 300 ,  flex: 1 }} />
            
         ),
         footer: ''
