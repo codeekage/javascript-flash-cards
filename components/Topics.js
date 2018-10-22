@@ -6,7 +6,7 @@ let Introduction = [
     },
     {
         topic : 'About Javascipt',
-        route : 'Intro'
+        route : 'About'
     },
     {
         topic : 'JavaScript and Java',

@@ -1,3 +1,4 @@
+import * as React from 'react'
 import Introduction from './Introduction';
 import Arrays from './Arrays';
 import GrammarTypes from './GrammarTypes';
@@ -15,9 +16,6 @@ export default  drawerNavigation = createDrawerNavigator({
         screen : Introduction,
         navigationOptions : () => ({
             drawerLabel : 'Introduction',
-            tabBarIcon: ({tintColor}) => (
-                <Ionicons name="md-home" size={32} color={tintColor} />
-             )
         })
     },   
     Grammar : {
@@ -66,4 +64,16 @@ export default  drawerNavigation = createDrawerNavigator({
         })
     }
   
-});
+}, 
+{
+    contentOptions: {
+        activeTintColor: '#e91e63',
+        itemsContainerStyle: {
+          marginVertical: 0,
+        },
+        iconContainerStyle: {
+          opacity: 1
+        },
+      }
+}
+);

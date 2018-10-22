@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {Image} from 'react-native'
-import { Container, List, ListItem, Text} from 'native-base';
+import { Container, List, ListItem, Text, Body} from 'native-base';
 import FlashCards from '../Layout/FlashCards';
 
 const cards = [
     {
         header : 'JavaScript and Java',
+        image: require('../../assets/one.png'),
         note : 'Difference betweeen JavaScript and Java',
         body : (
             <List>
@@ -18,6 +19,7 @@ const cards = [
     },
     {
         header : 'Cont..',
+        image: require('../../assets/two.png'),
         note : 'Difference betweeen JavaScript and Java',
         body : (
             <List>
@@ -30,6 +32,7 @@ const cards = [
     },
     {
         header : 'Cont..',
+        image: require('../../assets/three.png'),
         note : 'Difference betweeen JavaScript and Java',
         body : (
             <List>
@@ -44,6 +47,7 @@ const cards = [
     },
     {
         header : 'Cont..',
+        image: require('../../assets/four.png'),
         note : 'Difference betweeen JavaScript and Java',
         body : (
             <List>
@@ -59,6 +63,7 @@ const cards = [
     {
         header : 'Cont..',
         note : 'Difference betweeen JavaScript and Java',
+        image: require('../../assets/one-thumb.png'),
         body : (
             <List>
                 <ListItem>
@@ -67,15 +72,6 @@ const cards = [
                     </Text>
                 </ListItem>
             </List>
-        ),
-        footer: ''
-    },
-    {
-        header : 'Cont..',
-        note : 'Difference betweeen JavaScript and Java',
-        body : (
-                    <Image source={require('../../assets/js-compare.png')} style={{ height: 300 ,  flex: 1 }} />
-           
         ),
         footer: ''
     },

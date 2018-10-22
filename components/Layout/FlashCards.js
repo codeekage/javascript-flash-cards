@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {View, Image } from 'react-native'
-import { Container, Header, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon, Content } from 'native-base';
+import { Container, Header, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon, Content, Right } from 'native-base';
 
 export default class FlashCards extends React.Component {
   render() {
@@ -9,12 +9,16 @@ export default class FlashCards extends React.Component {
           <DeckSwiper
             dataSource={this.props.dataSource}
             renderItem={item =>
-              <Card style={{ elevation: 3, height: 400 }}>
-                <CardItem header>
+              <Card transparent>
+                <CardItem header style={{backgroundColor: '#e91e63'}}>
+                <Left>
+                    <Thumbnail large square source={item.image} />
+                
                   <Body>
-                    <Text style={{fontWeight: 'bold'}}>{item.header}</Text>
-                    <Text note>{item.note}</Text>
+                    <Text style={{fontWeight: 'bold', color : 'white'}}>{item.header}</Text>
+                    <Text note style={{color : 'white'}}>{item.note}</Text>
                   </Body>
+                  </Left>
                 </CardItem>
                 <CardItem cardBody>
                

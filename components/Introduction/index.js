@@ -8,6 +8,8 @@ import ApplicationFooter from '../Layout/Footer'
 import { Introduction } from '../Topics'
 import IntroductionGuide from './Introduction';
 import JavaScriptJava from './JavaScriptJava';
+import AboutJS from './AboutJS'
+import { Ionicons } from '@expo/vector-icons'
 
 class HomeScreen extends React.Component {
     static navigationOptions = ({navigation}) =>  {
@@ -16,16 +18,16 @@ class HomeScreen extends React.Component {
             title: 'Introduction',
             drawerLabel: 'Home',
             drawerIcon: ({ tintColor }) => (
-                <Icon active name='ios-home' style={{color : 'pink'}} />
+                <Icon active name='ios-home' style={{color : 'pink'}}  />
             ),
             headerLeft: (
               <Button transparent onPress={params.openDrawer}>
-                  <Icon active name='menu' />
+                  <Icon active name='menu' style={{color: 'black', fontSize: 25}} />
               </Button>
             ),
             headerRight: (
               <Button transparent onPress={params.openNotifications}>
-                  <Icon active name='ios-notifications-outline' />
+                  <Icon active name='ios-notifications-outline' style={{color: 'black', fontSize: 25}} />
               </Button>
             ) 
             
@@ -93,6 +95,7 @@ export default createStackNavigator({
    Intro: HomeScreen,
    Notifications : NotificationScreen,
    Guide : IntroductionGuide,
+   About: AboutJS,
    JavaJava : JavaScriptJava
 },{
     initialRouteName : 'Intro'

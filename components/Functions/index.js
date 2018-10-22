@@ -17,15 +17,15 @@ class HomeScreen extends React.Component {
                 <Icon active name='ios-home' style={{color : 'pink'}} />
             ),
             headerLeft: (
-              <Button transparent onPress={params.openDrawer}>
-                  <Icon active name='menu' />
-              </Button>
+                <Button transparent onPress={params.openDrawer}>
+                    <Icon active name='menu' style={{color: 'black', fontSize: 25}} />
+                </Button>
             ),
-            headerRight: (
-              <Button transparent onPress={params.openNotifications}>
-                  <Icon active name='ios-notifications-outline' />
-              </Button>
-            ) 
+              headerRight: (
+                <Button transparent onPress={params.openNotifications}>
+                    <Icon active name='ios-notifications-outline' style={{color: 'black', fontSize: 25}} />
+                </Button>
+            )  
             
         }
     };
