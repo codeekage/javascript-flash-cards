@@ -62,11 +62,11 @@ const cards = [
     },
     {
         header : 'Cont..',
+        image: require('../../assets/four.png'),
         note : 'Difference betweeen JavaScript and Java',
-        image: require('../../assets/one-thumb.png'),
         body : (
             <List>
-                <ListItem>
+            <ListItem>
                     <Text style={{textAlign: 'justify'}}>
                         In contrast, JavaScript descends in spirit from a line of smaller, dynamically typed languages such as HyperTalk and dBASE. These scripting languages offer programming tools to a much wider audience because of their easier syntax, specialized built-in functionality, and minimal requirements for object creation.
                     </Text>
@@ -74,6 +74,56 @@ const cards = [
             </List>
         ),
         footer: ''
+    },
+    {
+        header : 'JavaScript Compared to Java',
+        note : 'JavaScript Comparison',
+        image: require('../../assets/one-thumb.png'),
+        body : (
+            <List>
+                <ListItem>
+                    <Text style={{textAlign: 'justify'}}>
+                     1. Object-oriented. No distinction between types of objects. Inheritance is through the prototype mechanism, and properties and methods can be added to any object dynamically.
+                    </Text>
+                </ListItem>
+                <ListItem>
+                    <Text style={{textAlign: 'justify'}}>
+                      2.Variable data types are not declared (dynamic typing, loosely typed).
+                    </Text>
+                </ListItem>
+                <ListItem>
+                    <Text style={{textAlign: 'justify'}}>
+                    3. Cannot automatically write to hard disk.
+                    </Text>
+                </ListItem>
+            </List>
+        ),
+        footer: 'For more information on the differences between JavaScript and Java, see the chapter Details of the object model.'
+    },
+    {
+        header : 'JavaScript Compared to Java',
+        note : 'Java Comparison',
+        image: require('../../assets/one-thumb.png'),
+        body : (
+            <List>
+                <ListItem>
+                    <Text style={{textAlign: 'justify'}}>
+                     1. Class-based. Objects are divided into classes and instances with all inheritance through the class hierarchy. Classes and instances cannot have properties or methods added dynamically.
+                    </Text>
+                </ListItem>
+                <ListItem>
+                    <Text style={{textAlign: 'justify'}}>
+                      2. Variable data types must be declared (static typing, strongly typed).
+                    </Text>
+                </ListItem>
+                <ListItem>
+                    <Text style={{textAlign: 'justify'}}>
+                    3. Can automatically write to hard disk.
+                    </Text>
+                </ListItem>
+            </List>
+        ),
+        footer: 'For more information on the differences between JavaScript and Java, see the chapter Details of the object model.'
     },
 ]
 
