@@ -8,6 +8,7 @@ import ApplicationFooter from '../Layout/Footer'
 import { Introduction } from '../Topics'
 import IntroductionGuide from './Introduction';
 import JavaScriptJava from './JavaScriptJava';
+import ECMAScript from './ECMAScript';
 import AboutJS from './AboutJS'
 import { Ionicons } from '@expo/vector-icons'
 
@@ -27,7 +28,7 @@ class HomeScreen extends React.Component {
             ),
             headerRight: (
               <Button transparent onPress={params.openNotifications}>
-                  <Icon active name='ios-notifications-outline' style={{color: 'black', fontSize: 25}} />
+              <Icon active name='ios-cog' style={{color: 'black', fontSize: 25}} />
               </Button>
             ) 
             
@@ -96,6 +97,7 @@ export default createStackNavigator({
    Notifications : NotificationScreen,
    Guide : IntroductionGuide,
    About: AboutJS,
+   ECMA: ECMAScript,
    JavaJava : JavaScriptJava
 },{
     initialRouteName : 'Intro'

@@ -7,7 +7,7 @@ export default class Notification extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.paragraph}> No Notifications || Notifications will Appear </Text>
+        <Text style={styles.paragraph}> Update will enable changing to Dark Theme </Text>
       </View>
     )
   }
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   },
   paragraph: {
     margin: 24,
-    fontSize: 18,
     textAlign: 'center',
     color: '#34495e',
   },

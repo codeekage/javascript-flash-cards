@@ -14,7 +14,7 @@ let Introduction = [
     },
     {
         topic : 'ECMAScript',
-        route : 'Intro'
+        route : 'ECMA'
     },
     {
         topic : 'Tools',

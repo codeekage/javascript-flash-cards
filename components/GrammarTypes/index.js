@@ -19,7 +19,7 @@ class GrammarScreen extends React.Component {
             ),
             headerRight: (
                 <Button transparent onPress={params.openNotifications}>
-                    <Icon active name='ios-notifications-outline' style={{color: 'black', fontSize: 25}} />
+                    <Icon active name='ios-cog' style={{color: 'black', fontSize: 25}} />
                 </Button>
             ) 
             
